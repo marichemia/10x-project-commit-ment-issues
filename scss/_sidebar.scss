@@ -1,0 +1,45 @@
+.sidebar {
+    background-color: #111111; //needs to be changed to a variable
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    color: #898989; //needs to be changed to a variable
+    font-family: "Satoshi", sans-serif;
+    font-size: 14px;
+}
+
+.sidebar-top {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  
+
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar-item {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  margin-bottom: 4px;
+}
+
+.sidebar-item a {
+  color: inherit;
+  text-decoration: none;
+  //hover effect should be added here
+}
+
+.sidebar-item-icon-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
