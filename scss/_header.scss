@@ -1,0 +1,58 @@
+.header {
+    background-color: #060606; //needs to be changed to a variable
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Satoshi', sans-serif;
+    color: #898989; //needs to be changed to a variable
+    padding-left: 20px;
+
+    a {
+       text-decoration: none;
+       color: inherit;
+    }
+}
+
+.header-left-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+
+    nav {
+    display: flex;
+    }
+
+    .header-nav-link {
+        width: 210px;
+        display: flex;
+        align-items: center;
+        border-radius: 8px;
+        padding: 4px;
+    }
+
+    #home-link-active {
+        background-color: #111111; //needs to be changed to a variable
+        color: white; //temp color for testing
+    }
+
+    .header-search {
+        display: flex;
+        align-items: center;
+        width: 350px;
+    }
+
+    .search-input {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: inherit;
+        font-family: inherit;
+        width: 100%;
+    }
+}
+
+
+
