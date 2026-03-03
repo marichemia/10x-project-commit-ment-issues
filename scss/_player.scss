@@ -1,0 +1,25 @@
+.footer {
+    background-color: #333842; // needs to be changed to a variable
+    border-radius: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+
+    .play-progress {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.other-controls {
+    display: flex;
+    align-items: center;
+}
+

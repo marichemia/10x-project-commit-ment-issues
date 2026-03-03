@@ -28,7 +28,7 @@
 
 .footer {
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
   left: 259px;
   width: calc(100% - 259px);
   height: 81px;
@@ -161,6 +161,29 @@
 }
 .header-right-container .header-icon-btn:hover {
   background-color: #111111;
+}
+
+.footer {
+  background-color: #333842;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+}
+.player-controls .play-progress {
+  display: flex;
+  align-items: center;
+}
+
+.other-controls {
+  display: flex;
+  align-items: center;
 }
 
 /* Styles specific to the Search page go here*/
