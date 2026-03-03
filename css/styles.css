@@ -36,7 +36,7 @@
 }
 
 .sidebar {
-  background-color: #111111;
+  background-color: #060606;
   padding: 8px 16px;
   display: flex;
   flex-direction: column;
@@ -80,6 +80,87 @@
   display: flex;
   align-items: center;
   gap: 12px;
+}
+
+.header {
+  background-color: #060606;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Satoshi", sans-serif;
+  color: #898989;
+  padding: 0 12px;
+}
+.header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-left-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header-left-container nav {
+  display: flex;
+}
+.header-left-container .header-nav-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 15%;
+}
+@media (min-width: 1600px) {
+  .header-left-container .header-nav-link {
+    width: 210px;
+    justify-content: space-between;
+    padding-right: 30%;
+  }
+}
+.header-left-container #home-link-active, .header-left-container .header-nav-link:hover {
+  background-color: #111111;
+  color: white;
+}
+.header-left-container .header-search {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  width: clamp(220px, 20vw, 350px);
+}
+.header-left-container .search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: inherit;
+  font-family: inherit;
+  width: 100%;
+}
+
+.header-right-container {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.header-right-container .header-icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease;
+}
+.header-right-container .header-icon-btn img {
+  width: 40px;
+  height: 40px;
+}
+.header-right-container .header-icon-btn:hover {
+  background-color: #111111;
 }
 
 /* Styles specific to the Search page go here*/
