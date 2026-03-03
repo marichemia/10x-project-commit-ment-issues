@@ -3,8 +3,6 @@
 
 /* Styles specific to the Search page go here*/
 
-
-
 .main-content {
     color: white;
     background-color: #060606;
@@ -66,78 +64,16 @@
 
 .discover {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
 }
 
-.box1 {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #1E3264;
-    border: 2px;
-    border-radius: 10px;
+.boxes {
+    display: flex;
+    img{
+        margin-right: 2px;
 }
-
-.box2 {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #BA5D07;
-    border: 2px;
-    border-radius: 10px;
-}
-
-.box3 {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #1E3264;
-    border: 2px;
-    border-radius: 10px;
-}
-
-.box4 {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #8D67AB;
-    border: 2px;
-    border-radius: 10px;
-}
-.box5 {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #B02897;
-    border: 2px;
-    border-radius: 10px;
-}
-
-.box6 {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #8D67AB;
-    border: 2px;
-    border-radius: 10px;
-}
-
-.box7 {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #777777;
-    border: 2px;
-    border-radius: 10px;
-}
-
-.box8 {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #BA5D07;
-    border: 2px;
-    border-radius: 10px;
 }
 
 .genrs-wrapper {
@@ -147,77 +83,8 @@
 
 .genrs {
     display: flex;
-    justify-content: space-around;
-}
-
-.box9 {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #148A08;
-    border: 2px;
-    border-radius: 10px;
-}
-
-.box10 {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #D84000;
-    border: 2px;
-    border-radius: 10px;
-}
-
-.box11 {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #503750;
-    border: 2px;
-    border-radius: 10px;
-}
-
-.box12 {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #006450;
-    border: 2px;
-    border-radius: 10px;
-}
-.box13 {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #E91429;
-    border: 2px;
-    border-radius: 10px;
-}
-
-.box14 {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #1E3264;
-    border: 2px;
-    border-radius: 10px;
-}
-
-.box15 {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #E91429;
-    border: 2px;
-    border-radius: 10px;
-}
-
-.box16 {
-    display: inline-block;
-    width: 150px;
-    height: 150px;
-    background-color: #537AA1;
-    border: 2px;
-    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: auto;
 }
 
