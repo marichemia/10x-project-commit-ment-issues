@@ -6,7 +6,7 @@
     align-items: center;
     font-family: 'Satoshi', sans-serif;
     color: #898989; //needs to be changed to a variable
-    padding-left: 20px;
+    padding: 0 12px;
 
     a {
        text-decoration: none;
@@ -16,24 +16,29 @@
 
 .header-left-container {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    font-size: 14px;
-
+    gap: 16px;
     nav {
     display: flex;
     }
 
     .header-nav-link {
-        width: 210px;
         display: flex;
         align-items: center;
-        border-radius: 8px;
-        padding: 4px;
+        gap: 8px;
+        padding: 8px 16px;
+        border-radius: 15%;
     }
 
-    #home-link-active {
+    @media (min-width: 1600px) {
+        .header-nav-link {
+            width: 210px;
+            justify-content: space-between;
+            padding-right: 30%;
+        }
+    }
+
+    #home-link-active, .header-nav-link:hover {
         background-color: #111111; //needs to be changed to a variable
         color: white; //temp color for testing
     }
@@ -41,7 +46,10 @@
     .header-search {
         display: flex;
         align-items: center;
-        width: 350px;
+        gap: 8px;
+        padding: 8px 16px;
+        border-radius: 999px;
+        width: clamp(220px, 20vw, 350px);
     }
 
     .search-input {
@@ -51,6 +59,33 @@
         color: inherit;
         font-family: inherit;
         width: 100%;
+    }
+}
+
+.header-right-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    .header-icon-btn {
+        background: transparent;
+        border: none;
+        cursor: pointer;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background-color 0.2s ease;
+    }
+
+    .header-icon-btn img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+    .header-icon-btn:hover {
+        background-color: #111111; //needs to be changed to a variable
     }
 }
 
