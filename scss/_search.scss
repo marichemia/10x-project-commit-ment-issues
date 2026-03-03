@@ -3,20 +3,40 @@
 
 /* Styles specific to the Search page go here*/
 
+
+
 .main-content {
     color: white;
-    background-color: black;
+    background-color: #060606;
+    overflow: auto;
+    padding: 20px;
 }
 
-.resent-searches {
+.search-wrapper {
     display: flex;
+    justify-content: space-between;
+}
+
+.recent-searches {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+.image-wrapper {
+    position: relative;
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
 }
 
 .card1 {
     width: 150px;
     height: 150px;
     display: inline-block;
-    background-image: url(/images/duft-punk.png);
+    background-image: url(/images/daft-punk.png);
     background-size: cover;
 }
 
@@ -36,6 +56,17 @@
     background-image: url(/images/Black-Holes.png);
     background-size: cover;
     border-radius: 10px;
+    box-shadow: 0px -5px 0px 0px rgba($color: #6278B1, $alpha: 1.0)
+}
+
+.discover-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discover {
+    display: flex;
+    justify-content: space-around;
 }
 
 .box1 {
@@ -107,6 +138,16 @@
     background-color: #BA5D07;
     border: 2px;
     border-radius: 10px;
+}
+
+.genrs-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.genrs {
+    display: flex;
+    justify-content: space-around;
 }
 
 .box9 {
