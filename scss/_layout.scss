@@ -30,7 +30,7 @@
 
 .footer {
     position: fixed;
-    bottom: 0;
+    bottom: 5px;
     left: $sidebar-width;
     width: calc(100% - #{$sidebar-width});
     height: $footer-height;
