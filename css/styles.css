@@ -111,6 +111,7 @@
   gap: 8px;
   padding: 8px 16px;
   border-radius: 15%;
+  height: 50px;
 }
 @media (min-width: 1600px) {
   .header-left-container .header-nav-link {
