@@ -28,7 +28,7 @@
 
 .footer {
   position: fixed;
-  bottom: 0;
+  bottom: 5px;
   left: 259px;
   width: calc(100% - 259px);
   height: 81px;
@@ -161,6 +161,99 @@
 }
 .header-right-container .header-icon-btn:hover {
   background-color: #111111;
+}
+
+.footer {
+  background-color: #333842;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32px;
+  color: #898989;
+  font-family: "Satoshi", sans-serif;
+}
+@media (max-width: 1300px) {
+  .footer .other-controls {
+    display: none;
+  }
+  .footer .more-menu {
+    display: block;
+  }
+}
+
+.footer-left-group {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex: 1;
+}
+
+.player-controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  max-width: 647px;
+  flex: 1;
+}
+.player-controls .play-progress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1;
+  min-width: 0;
+  font-size: 12px;
+}
+.player-controls .progress-bar {
+  height: 3px;
+  background-color: rgba(137, 137, 137, 0.27);
+  border-radius: 0.5px;
+  position: relative;
+  flex: 1;
+  max-width: 317px;
+}
+.player-controls .progress {
+  width: 45%;
+  height: 3px;
+  background-color: #E0E0E0;
+  border-radius: 0.5px;
+}
+
+.song-playing {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.song-playing .cover {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #555555;
+}
+.song-playing .song-info {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+}
+.song-playing .song-info .song-title {
+  font-weight: 500;
+  color: #E0E0E0;
+}
+
+.other-controls {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.other-controls .line {
+  width: 1px;
+  height: 24px;
+  background-color: #E0E0E0;
+  margin: 0 12px;
+}
+
+.none {
+  display: none;
 }
 
 /* Styles specific to the Search page go here*/
