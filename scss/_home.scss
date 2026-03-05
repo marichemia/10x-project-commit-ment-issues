@@ -1,0 +1,39 @@
+.home-page {
+    flex: 1;
+    overflow-y: auto;
+
+    border: solid 1px #202020; // needs to be changed to a variable
+    border-radius: 10px;
+
+    margin-top: 3px;
+
+    padding: 10px 20px 0 20px;
+}
+
+.filters-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    
+    .filter {
+        padding: 8px 15px;
+        border-radius: 8px;
+        border: none;
+        background: rgba(32, 32, 32, 0.5); // needs to be changed to a variable
+        color: #E0E0E0; // needs to be changed to a variable
+        font-size: 14px;
+        cursor: pointer;
+
+        &:hover {
+            background: #E0E0E0; // needs to be changed to a variable
+            color: #111111; // needs to be changed to a variable
+        }
+    }
+
+    .active {
+        background: #E0E0E0; // needs to be changed to a variable
+        color: #111111; // needs to be changed to a variable
+    }
+}
+
