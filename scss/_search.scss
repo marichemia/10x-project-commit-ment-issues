@@ -2,3 +2,96 @@
 @use 'mixins' as *;
 
 /* Styles specific to the Search page go here*/
+
+body {
+    overflow-x: hidden;
+}
+
+.main-content {
+    color: white;
+    background-color: #060606;
+    overflow: auto;
+    padding: 20px;
+}
+
+.search-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recent-searches {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+.image-wrapper {
+    position: relative;
+    img {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.card1 {
+    width: 150px;
+    height: 150px;
+   // display: inline-block;
+    background-image: url(/images/daft-punk.png);
+    background-size: cover;
+}
+
+.card2 {
+    width: 150px;
+    height: 150px;
+   // display: inline-block;
+    background-image: url(/images/David-Bowie.png);
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.card3 {
+    width: 150px;
+    height: 150px;
+   // display: inline-block;
+    background-image: url(/images/Black-Holes.png);
+    background-size: cover;
+    border-radius: 10px;
+    box-shadow: 0px -5px 0px 0px rgba($color: #6278B1, $alpha: 1.0)
+}
+
+.discover-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.genrs-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discover .genrs {
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12px, 1fr));
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.boxes img {
+    height: auto;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
