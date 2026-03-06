@@ -6,6 +6,7 @@
 .sidebar {
   width: 259px;
   background-color: #d7cfcf;
+  min-width: 259px;
 }
 
 .content-wrapper {
@@ -24,7 +25,6 @@
 .main-content {
   flex: 1;
   background-color: #efe2e2;
-  padding-bottom: 81px;
 }
 
 .footer {
@@ -363,6 +363,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 32px;
 }
 .filters-wrapper .filter {
   padding: 8px 15px;
@@ -371,15 +372,94 @@ body {
   background: rgba(32, 32, 32, 0.5);
   color: #E0E0E0;
   font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
 }
 .filters-wrapper .filter:hover {
   background: #E0E0E0;
   color: #111111;
 }
-.filters-wrapper .active {
+.filters-wrapper .filter.active {
   background: #E0E0E0;
   color: #111111;
+}
+
+.home-pg-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.home-pg-section .section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.home-pg-section .section-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #E0E0E0;
+}
+.home-pg-section .cards-container {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+  overflow-x: auto;
+  margin-bottom: 52px;
+  padding-bottom: 10px;
+}
+.home-pg-section .cards-container .card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 170px;
+  padding-top: 4px;
+  cursor: pointer;
+}
+.home-pg-section .cards-container .card:hover {
+  transform: translateY(-4px);
+  transition: transform 0.2s ease;
+}
+.home-pg-section .cards-container .card-image {
+  border-radius: 10px;
+}
+.home-pg-section .cards-container .card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.home-pg-section .cards-container .card-title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+.home-pg-section .cards-container .card-title-wrapper .card-title {
+  color: #E0E0E0;
+  max-width: 120px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.home-pg-section .cards-container .card-description {
+  font-size: 12px;
+  color: #898989;
+}
+
+.count-pink {
+  color: #CE6E9A;
+}
+
+.count-cyan {
+  color: #95E6D3;
+}
+
+.count-orange {
+  color: #FDD87D;
+}
+
+.none {
+  display: none;
 }
 
 @font-face {
@@ -387,7 +467,6 @@ body {
   src: url("../fonts/Satoshi-Regular.woff2") format("woff2");
   font-weight: 400;
   font-style: normal;
-  font-family: "Satoshi", sans-serif;
 }
 * {
   margin: 0;
@@ -397,6 +476,7 @@ body {
 
 body {
   margin: 0;
+  font-family: "Satoshi", sans-serif;
 }
 
 /*# sourceMappingURL=styles.css.map */
