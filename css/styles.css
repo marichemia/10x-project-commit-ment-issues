@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .app {
   display: flex;
   height: 100vh;
@@ -349,7 +350,7 @@ body {
 }
 
 .main-page {
-  color: white;
+  color: #E0E0E0;
   background-color: #060606;
   overflow: auto;
   padding: 20px;
@@ -418,70 +419,105 @@ form.library-icon-btn:hover input, form.library-icon-btn input:focus {
   width: 100px;
 }
 
-.song-image-wrapper1 {
-  width: 150px;
-  height: 150px;
-  background-image: url(../images/green-heart.png);
-  background-size: cover;
-}
-
-.song-image-wrapper2 {
-  width: 150px;
-  height: 150px;
-  background-image: url(../images/David-Bowie.png);
-  background-size: cover;
-  border-radius: 50%;
-}
-
-.song-image-wrapper3 {
-  width: 150px;
-  height: 150px;
-  background-image: url(../images/daft-punk.png);
-  background-size: cover;
-}
-
-.song-image-wrapper4 {
-  width: 150px;
-  height: 150px;
-  background-image: url(../images/music.png);
-  background-size: cover;
-}
-
-.song-image-wrapper5 {
-  width: 150px;
-  height: 150px;
-  background-image: url(../images/music.png);
-  background-size: cover;
-}
-
-.song-image-wrapper6 {
-  width: 150px;
-  height: 150px;
-  background-image: url(../images/music.png);
-  background-size: cover;
-}
-
-.song-image-wrapper7 {
-  width: 150px;
-  height: 150px;
-  background-image: url(../images/music.png);
-  background-size: cover;
-}
-
-.song-image-wrapper8 {
-  width: 150px;
-  height: 150px;
-  background-image: url(../images/folder.png);
-  background-size: cover;
+.library-main-content {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 0px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .song-wrapper {
   position: relative;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  min-width: 0;
+  width: 100%;
 }
-.song-wrapper img {
+
+.song-wrapper:hover {
+  background-color: #282828;
+}
+
+/* სურათების კონტეინერი */
+.song-image-wrapper {
+  width: 100%;
+}
+
+.song-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* სურათი რომ არ გაიწელო და ჩაჯდეს ფორმაში */
+  border-radius: 8px;
+}
+
+.song-image-wrapper1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.pin-image-wrapper {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 8px;
+  right: 8px;
+}
+
+.pin-image-wrapper img {
+  width: 40px;
+  height: 40px;
+}
+
+.song-title-wrapper {
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+.song-title-wrapper h4 {
+  font-size: 14px;
+}
+.song-title-wrapper .neon-green {
+  color: #1ed760;
+}
+.song-title-wrapper .light-gray {
+  color: #989797;
+}
+
+.light-blue {
+  color: #95E6D3;
+}
+
+.light-pink {
+  color: #F4B8BD;
+}
+
+.light-green {
+  color: #C3E7B7;
+}
+
+.neon-yellow {
+  color: #CCF665;
+}
+
+.yellow {
+  color: #F9E72C;
+}
+
+.aqua {
+  color: #9BF0E2;
+}
+
+.box-description {
+  font-size: 14px;
+  color: #989797;
+  margin-top: 4px;
 }
 
 @font-face {
