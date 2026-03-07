@@ -7,6 +7,7 @@
 </head>
 <body>
     <div class="app">
+        <!--Left Sidebar-->
         <aside class="sidebar">
             <div class="sidebar-top">
                 <img src="images/library-icon.svg" alt="My Library" class="library-icon" />
@@ -100,7 +101,9 @@
                 </ul>
             </nav>
         </aside>
+        <!--header/main content area/footer/friends sidebar container-->
         <div class="content-wrapper">
+            <!--Header-->
             <header class="header">
                 <div class="header-left-container">
                     <nav>
@@ -127,9 +130,9 @@
                         <img src="images/lock-icon.svg" alt="Security">
                     </button>
 
-                    <button class="header-icon-btn">
+                    <a class="header-icon-btn" href="#friends">
                         <img src="images/friends-icon.svg" alt="Friends">
-                    </button>
+                    </a>
 
                     <button class="header-icon-btn">
                         <img src="images/settings-icon.svg" alt="Settings">
@@ -140,6 +143,71 @@
                     </button>
                 </div>
             </header>
+            <!--Friends Activity Sidebar-->
+            <aside id="friends" class="friends-sidebar">
+                <div class="friends-sidebar-header">
+                    <h2>Friends Activity</h2>
+                    <div class="icons-group">
+                        <a>
+                            <img src="images/add-friend-icon.svg" alt="Add Friend">
+                        </a>
+                        <a href="#" class="close">
+                            <img src="images/x-close-icon.svg" alt="Close">
+                        </a>
+                    </div>
+                </div>
+                <div class="friends-list-container">
+                    <div class="friend-card">
+                        <img src="images/friend-avatar-1.png" alt="FriendlyMusicListener">
+                        <div class="friend-info">
+                            <div class="friend-name">FriendlyMusicListener</div>
+                            <div class="friend-activity">
+                                <img src="images/online-icon.svg" alt="Listenint Now">
+                                <div>Goosebumps</div>
+                                <span>&bull;</span>
+                                <div class="artist">Travis Scott</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend-card">
+                        <img src="images/friend-avatar-2.png" alt="AverageMusicEnjoyer">
+                        <div class="friend-info">
+                            <div class="friend-name">AverageMusicEnjoyer</div>
+                            <div class="friend-activity">
+                                <img src="images/online-icon.svg" alt="Listenint Now">
+                                <div>Get Lucky</div>
+                                <span>&bull;</span>
+                                <div class="artist">Daft Punk</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend-card">
+                        <img src="images/friend-avatar-3.png" alt="MusicEnthusiast">
+                        <div class="friend-info">
+                            <div class="friend-name">MusicEnthusiast</div>
+                            <div class="friend-activity">
+                                <span>1h</span>
+                                <div>would he</div>
+                                <span>&bull;</span>
+                                <div class="artist">joji</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="friend-card">
+                        <img src="images/friend-avatar-4.png" alt="IListenToMusic56">
+                        <div class="friend-info">
+                            <div class="friend-name">IlistenToMusic56</div>
+                            <div class="friend-activity">
+                                <span>6h</span>
+                                <div>Rockstar</div>
+                                <span>&bull;</span>
+                                <div class="artist">Post Malone</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+            <!--Main Content Area-->
             <main class="home-page main-content">
                 <div class="filters-wrapper">
                     <div class="content-filters">
@@ -432,6 +500,7 @@
                     </div>
                 </div>
             </main>
+            <!--Fixed footer player-->
             <footer class="footer">
                 <div class="footer-left-group">
                     <div class="player-controls">
@@ -470,6 +539,7 @@
                 </div>
                  <img src="images/more-icon.svg" class="none more-menu" alt="More Options">
             </footer>
+            
         </div>
     </div>
 </body>
