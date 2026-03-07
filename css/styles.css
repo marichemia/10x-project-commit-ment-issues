@@ -535,6 +535,83 @@ body {
   display: none;
 }
 
+.friends-sidebar {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 57px;
+  bottom: 91px;
+  width: clamp(270px, 21vw, 358px);
+  border: solid 1px #202020;
+  border-radius: 10px;
+  color: #E0E0E0;
+  padding: 20px 12px;
+}
+.friends-sidebar .friends-sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 44px;
+}
+.friends-sidebar .friends-sidebar-header h2 {
+  font-size: 14px;
+}
+.friends-sidebar .friends-sidebar-header .icons-group {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.friends-sidebar .friends-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.friends-sidebar .friend-card {
+  display: flex;
+  gap: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.friends-sidebar .friend-card img {
+  width: 40px;
+  height: 40px;
+}
+.friends-sidebar .friend-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: flex-start;
+}
+.friends-sidebar .friend-info img {
+  width: 10px;
+  height: 12px;
+}
+.friends-sidebar .friend-info .friend-name {
+  color: #E0E0E0;
+  font-size: 12px;
+}
+.friends-sidebar .friend-info .friend-name:hover {
+  color: #1ED760;
+}
+.friends-sidebar .friend-info .friend-activity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+.friends-sidebar .friend-info .friend-activity .artist, .friends-sidebar .friend-info .friend-activity span {
+  color: #6E6E6E;
+}
+
+#friends:target {
+  display: block;
+}
+
+#friends:target ~ .home-page {
+  margin-right: clamp(275px, 21.5vw, 365px);
+  transition: margin-right 0.3s ease;
+}
+
 @font-face {
   font-family: "Satoshi";
   src: url("../fonts/Satoshi-Regular.woff2") format("woff2");
