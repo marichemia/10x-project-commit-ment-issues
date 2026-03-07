@@ -440,6 +440,15 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.home-pg-section .cards-container .artist-card .card-title-wrapper {
+  justify-content: center;
+  font-weight: 100;
+}
+.home-pg-section .cards-container .artist-card img {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+}
 .home-pg-section .cards-container .card-description {
   font-size: 12px;
   color: #898989;
