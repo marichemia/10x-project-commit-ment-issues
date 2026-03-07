@@ -418,6 +418,9 @@ body {
   transform: translateY(-4px);
   transition: transform 0.2s ease;
 }
+.home-pg-section .cards-container .card-image-wrapper {
+  margin-bottom: 5px;
+}
 .home-pg-section .cards-container .card-image {
   border-radius: 10px;
 }
@@ -454,6 +457,18 @@ body {
   color: #898989;
 }
 
+@media (max-width: 1280px) {
+  .card {
+    width: 150px;
+  }
+  .card img {
+    width: 150px;
+    height: 150px;
+  }
+  .card .card-info {
+    width: 150px;
+  }
+}
 .cards-container::-webkit-scrollbar {
   height: 6px;
 }

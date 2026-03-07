@@ -82,6 +82,10 @@
             transition: transform 0.2s ease;
         }
 
+        .card-image-wrapper {
+            margin-bottom: 5px;
+        }
+
         .card-image {
             border-radius: 10px;
         }
@@ -127,6 +131,21 @@
             //max-width: 170px;
         }
 
+    }
+}
+
+@media (max-width: 1280px) {
+    .card {
+        width: 150px;
+
+        img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .card-info {
+            width: 150px;
+        }
     }
 }
 
