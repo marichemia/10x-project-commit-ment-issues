@@ -390,6 +390,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-bottom: 32px;
 }
 .home-pg-section .section-header {
   display: flex;
@@ -470,16 +471,40 @@ body {
   background: #555;
 }
 
-.count-pink {
+.pink {
   color: #CE6E9A;
 }
 
-.count-cyan {
+.cyan {
   color: #95E6D3;
 }
 
-.count-orange {
+.orange {
   color: #FDD87D;
+}
+
+.lime {
+  color: #CCF665;
+}
+
+.yellow {
+  color: #F9E72C;
+}
+
+.blue {
+  color: #6F86FF;
+}
+
+.light-pink {
+  color: #FFCBD4;
+}
+
+.green {
+  color: #27856B;
+}
+
+.neon-pink {
+  color: #DD138B;
 }
 
 .none {

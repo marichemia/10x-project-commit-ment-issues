@@ -46,6 +46,8 @@
     flex-direction: column;
     gap: 20px;
 
+    margin-bottom: 32px;
+
     .section-header {
         display: flex;
         justify-content: space-between;
@@ -141,16 +143,40 @@
     background: #555;
 }
 
-.count-pink{
-    color: #CE6E9A; // needs to be changed to a variable
+.pink{
+    color: #CE6E9A; 
 }
 
-.count-cyan {
-    color: #95E6D3; // needs to be changed to a variable
+.cyan {
+    color: #95E6D3; 
 }
 
-.count-orange {
-    color: #FDD87D; // needs to be changed to a variable
+.orange {
+    color: #FDD87D; 
+}
+
+.lime {
+    color: #CCF665; 
+}
+
+.yellow {
+    color: #F9E72C; 
+}
+
+.blue {
+    color: #6F86FF; 
+}
+
+.light-pink {
+    color: #FFCBD4; 
+}
+
+.green {
+    color: #27856B; 
+}
+
+.neon-pink {
+    color: #DD138B;
 }
 
 .none {
