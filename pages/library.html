@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+    <div class="app">
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <img src="../images/library-icon.svg" alt="My Library" class="library-icon" />
+                <span class="sidebar-title">My Library</span>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="sidebar-item">
+                        <a href="#">
+                            <div class="sidebar-item-icon-group">
+                                <img src="../images/pins-icon.svg" alt="Pins icon" class="sidebar-icon">
+                                <span class="sidebar-text">Pins</span>
+                            </div>
+                            <span><img src="../images/arrow-icon.svg" alt="Arrow Icon" class="sidebar-arrow"></span>
+                        </a>
+                    </li>
+                   
+                    <li class="sidebar-item">
+                        <a href="#">
+                            <div class="sidebar-item-icon-group">
+                                <img src="../images/playlists-icon.svg" alt="Playlists icon" class="sidebar-icon">
+                                <span class="sidebar-text">Playlists</span>
+                            </div>
+                            <span><img src="../images/arrow-icon.svg" alt="Arrow Icon" class="sidebar-arrow"></span>
+                        </a>
+                    </li>
+
+                   <li class="sidebar-item">
+                        <a href="#">
+                            <div class="sidebar-item-icon-group">
+                                <img src="../images/liked-songs-icon.svg" alt="Liked Songs icon" class="sidebar-icon">
+                                <span class="sidebar-text">Liked Songs</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#">
+                            <div class="sidebar-item-icon-group">
+                                <img src="../images/saves-icon.svg" alt="Saves icon" class="sidebar-icon">
+                                <span class="sidebar-text">Saves</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#">
+                            <div class="sidebar-item-icon-group">
+                                <img src="../images/albums-icon.svg" alt="Albums icon" class="sidebar-icon">
+                                <span class="sidebar-text">Albums</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#">
+                            <div class="sidebar-item-icon-group">
+                                <img src="../images/folders-icon.svg" alt="Folders icon" class="sidebar-icon">
+                                <span class="sidebar-text">Folders</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#">
+                            <div class="sidebar-item-icon-group">
+                                <img src="../images/podcasts-icon.svg" alt="Podcasts icon" class="sidebar-icon">
+                                <span class="sidebar-text">Podcasts</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#">
+                            <div class="sidebar-item-icon-group">
+                                <img src="../images/audiobooks-icon.svg" alt="Audiobooks icon" class="sidebar-icon">
+                                <span class="sidebar-text">Audiobooks</span>
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="sidebar-item">
+                        <a href="#">
+                            <div class="sidebar-item-icon-group">
+                                <img src="../images/artists-icon.svg" alt="Artists icon" class="sidebar-icon">
+                                <span class="sidebar-text">Artists</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="content-wrapper">
+            <header class="header">
+                <div class="header-left-container">
+                    <nav>
+                        <a href="#" class="header-nav-link" id="home-link-active">
+                            <img src="../images/home-active-icon.svg" alt="Home Icon" class="home-icon">
+                            <span>Home</span>
+                        </a>
+                        <a href="#" class="header-nav-link">
+                            <img src="../images/discover-icon.svg" alt="Discover Icon" class="discover-icon">
+                            <span>Discover</span>
+                        </a>
+                    </nav>
+                    <form class="header-search">
+                        <img src="../images/search-icon.svg" alt="" class="search-icon">
+                        <input type="text" placeholder="Search" class="search-input">
+                    </form>
+                </div>
+                <div class="header-right-container">
+                    <button class="header-icon-btn">
+                        <img src="../images/notification-icon.svg" alt="Notifications">
+                    </button>
+
+                    <button class="header-icon-btn">
+                        <img src="../images/lock-icon.svg" alt="Security">
+                    </button>
+
+                    <button class="header-icon-btn">
+                        <img src="../images/friends-icon.svg" alt="Friends">
+                    </button>
+
+                    <button class="header-icon-btn">
+                        <img src="../images/settings-icon.svg" alt="Settings">
+                    </button>
+
+                    <button class="header-icon-btn">
+                        <img src="../images/profile-icon.svg" alt="Profile" class="header-avatar">
+                    </button>
+                </div>
+            </header>
+                <!--main content starts here-->
+            <main class="main-page">
+                <div class="library-button-wrapper">
+                    <div class="left-group">
+                        
+                         <button class="library-icon-btn">
+                            <img src="../images/see-more.png" alt="see-more-icon">
+                        </button>
+
+                        <button class="library-icon-btn">
+                            <img src="../images/see-icons.png" alt="see-icons">
+                        </button>
+
+                         <button class="library-icon-btn">
+                            <img src="../images/recent.png" alt="recent">
+                            <span>Recent</span>
+                        </button>
+
+                        <button class="library-icon-btn">
+                            <img src="../images/group.png" alt="group-sign">
+                            <span>Group</span>
+                        </button>
+
+                        <form class="library-icon-btn">
+                            <img src="../images/search.png" alt="search-sign">
+                            <input type="text">
+                        </form>
+                        
+                    </div>
+                    <div class="right-group">
+                         <button class="library-icon-btn">
+                            <img src="../images/plus.png" alt="plus-sign">
+                        </button>
+                    </div>
+                </div>
+                <!--songs with photoes are here-->
+                <div class="library-main-content"> 
+                    <div class="song-image-wrapper1">
+                        <div class="song-wrapper"> 
+                            <img src="../images/pin.png" alt="pin-icon">
+                        </div>
+                        <h4>Liked songs</h4>
+                        <span class="number">8</span>
+                        <p>Numb, Crawling, In the End, and more</p>
+                    </div>
+                    <div class="song-image-wrapper2">
+                        <div class="song-wrapper">
+                            <img src="../images/pin.png" alt="pin-icon">
+                        </div>
+                        <h4>David Bowie</h4>
+                    </div>
+                    <div class="song-image-wrapper3">
+                        <div class="song-wrapper">
+                            <img src="../images/pin.png" alt="pin-icon">
+                        </div>
+                        <h4>Daft Punk</h4>
+                    </div>
+                    <div class="song-image-wrapper4">
+                        <div class="song-wrapper">
+                            <img src="../images/pin.png" alt="pin-icon">
+                        </div>
+                        <h4>Chill Stuff</h4>
+                        <span class="song-number">152</span>
+                        <p>Simon and Garfunkel, Daft Punk, and more</p>
+                    </div>
+                    <div class="song-image-wrapper5">
+                        <div class="song-wrapper">
+                            <img src="../images/pin.png" alt="pin-icon">
+                        </div>
+                        <h4>The Jux Box</h4>
+                        <span class="song-number">50</span>
+                        <p>Simon and Garfunkel, Daft Punk, and more</p>
+                    </div>
+                    <div class="song-image-wrapper6">
+                        <div class="song-wrapper">
+                            <img src="../images/pin.png" alt="pin-icon">
+                        </div>
+                        <h4>Vibe</h4>
+                        <span class="song-number">30</span>
+                        <p>Blue Skies, No Heaven</p>
+                    </div>
+                    <div class="song-image-wrapper7">
+                        <div class="song-wrapper">
+                            <img src="../images/pin.png" alt="pin-icon">
+                        </div>
+                        <h4>Selected Linkin...</h4>
+                        <span class="song-number">8</span>
+                        <p>Numb, Crawling, In the End, and more</p>
+                    </div>
+                    <div class="song-image-wrapper8">
+                        <div class="song-wrapper">
+                            <img src="../images/pin.png" alt="pin-icon">
+                        </div>
+                        <h4>Fav bands</h4>
+                        <span class="song-number">6</span>
+                        <p>Linkin Park, Muse and more</p>
+                    </div>
+                </div>
+
+            </main>
+            <!--main content ends here-->
+            <footer class="footer">
+                <div class="footer-left-group">
+                    <div class="player-controls">
+                        <img src="../images/play-icon.svg" alt="play/pause">
+                        <img src="../images/prev-icon.svg" alt="skip back">
+                        <img src="../images/next-icon.svg" alt="skip forward">
+                        <img src="../images/shuffle-icon.svg" alt="shuffle">
+                        <img src="../images/repeat-icon.svg" alt="repeat">
+                        <div class="play-progress">
+                            <div class="runtime">2:23</div>
+                            <div class="progress-bar">
+                                <div class="progress"></div>
+                            </div>
+                            <div class="duration">4:45</div>
+                        </div>
+                        <img src="../images/volume-icon.svg" alt="volume">
+                    </div>
+                    <div class="song-playing">
+                        <img src="../images/song-image-icon.png" alt="cover">
+                        <div class="song-info">
+                            <div class="song-title">Get Lucky</div>
+                            <div class="artist">Daft Punk</div>
+                            <div class="album">Random Access Memories</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="other-controls">
+                    <img src="../images/like-icon.svg" alt="Add to Liked Songs">
+                    <img src="../images/add-icon.svg" alt="Add to Playlist">
+                    <img src="../images/lyrics-icon.svg" alt="Song Lyrics">
+                    <img src="../images/pc-icon.svg" alt="Device">
+                    <img src="../images/more-icon.svg" alt="More Options">
+                    <div class="line"></div>
+                    <img src="../images/dj-icon.svg" alt="DJ">
+                    <img src="../images/queue-icon.svg" alt="Queue">
+                </div>
+                 <img src="../images/more-icon.svg" class="none more-menu" alt="More Options">
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
