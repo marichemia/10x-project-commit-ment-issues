@@ -211,20 +211,56 @@
             <main class="home-page main-content">
                 <div class="filters-wrapper">
                     <div class="content-filters">
-                        <button class="filter active">All</button>
+                        <button class="filter active all-button">All</button>
                         <button class="filter">Music</button>
                         <button class="filter">Podcasts</button>
                         <button class="filter">Audiobooks</button>
                     </div>
                     <img src="images/filter-icon.svg" alt="Filter Content">
                 </div>
+                <!--Recents section (only visible on mobile view)-->
+                <section class="none mobile-recents-section">
+                    <div class="recents-card">
+                        <img src="images/song-image-icon.png" alt="Daft Punk">
+                        <div class="recents-card-info">
+                            <div class="recents-title">Get Lucky(feat. Pharell Williams)</div>
+                            <div class="recents-artist">Daft Punk</div>
+                        </div>
+                    </div>
+                    <div class="recents-card">
+                        <img src="images/daily-mix-2.png" alt="Daily Mix 2">
+                        <div class="recents-title">Daily Mix 2</div>
+                    </div>
+                    <div class="recents-card">
+                        <img src="images/daily-mix-1.png" alt="Daily Mix 1">
+                        <div class="recents-title">Daily Mix 1</div>
+                    </div>
+                    <div class="recents-card">
+                        <img src="images/song-image-icon.png" alt="Daft Punk">
+                        <div class="recents-card-info">
+                            <div class="recents-title">Instant Crush</div>
+                            <div class="recents-artist">Daft Punk</div>
+                        </div>
+                    </div>
+                    <div class="recents-card">
+                        <img src="images/song-image-icon.png" alt="Daft Punk">
+                        <div class="recents-card-info">
+                            <div class="recents-title">Around the world</div>
+                            <div class="recents-artist">Daft Punk</div>
+                        </div>
+                    </div>
+                    <div class="recents-card">
+                        <img src="images/rock-mix.png" alt="Rock Mix">
+                        <div class="recents-title">Rock Mix</div>
+                    </div>
+                </section>
                 <!-- Made for You Section -->
                 <section class="home-pg-section">
                     <div class="section-header">
                         <h2>Made for You</h2>
                         <div class="nav-icon-group">
-                            <img src="images/back-arrow-icon.svg" alt="Go Back">
-                            <img src="images/next-arrow-icon.svg" alt="Next">
+                            <img src="images/back-arrow-icon.svg" alt="Go Back" class="section-header-arrow">
+                            <img src="images/next-arrow-icon.svg" alt="Next" class="section-header-arrow">
                             <img src="images/more-icon.svg" alt="More Options">
                         </div>
                     </div>
@@ -340,8 +376,8 @@
                     <div class="section-header">
                         <h2>Your Top Mixes</h2>
                         <div class="nav-icon-group">
-                            <img src="images/back-arrow-icon.svg" alt="Go Back">
-                            <img src="images/next-arrow-icon.svg" alt="Next">
+                            <img src="images/back-arrow-icon.svg" alt="Go Back" class="section-header-arrow">
+                            <img src="images/next-arrow-icon.svg" alt="Next" class="section-header-arrow">
                             <img src="images/more-icon.svg" alt="More Options">
                         </div>
                     </div>
@@ -457,8 +493,8 @@
                     <div class="section-header">
                         <h2>Your Favorite Artists</h2>
                         <div class="nav-icon-group">
-                            <img src="images/back-arrow-icon.svg" alt="Go Back">
-                            <img src="images/next-arrow-icon.svg" alt="Next">
+                            <img src="images/back-arrow-icon.svg" alt="Go Back" class="section-header-arrow">
+                            <img src="images/next-arrow-icon.svg" alt="Next" class="section-header-arrow">
                             <img src="images/more-icon.svg" alt="More Options">
                         </div>
                     </div>
@@ -521,10 +557,14 @@
                     <div class="song-playing">
                         <img src="images/song-image-icon.png" alt="cover">
                         <div class="song-info">
-                            <div class="song-title">Get Lucky</div>
+                            <div class="song-title">Get Lucky <span class="none feat">(Feat. Pharrell Williams)</span></div>
                             <div class="artist">Daft Punk</div>
                             <div class="album">Random Access Memories</div>
                         </div>
+                    </div>
+                    <div class="mobile-footer-icons none">
+                        <img src="images/add-song.svg" alt="Add Song">
+                        <img src="images/play-mobile-icon.svg" alt="Play/Pause">
                     </div>
                 </div>
                 <div class="other-controls">
@@ -538,7 +578,33 @@
                     <img src="images/queue-icon.svg" alt="Queue">
                 </div>
                  <img src="images/more-icon.svg" class="none more-menu" alt="More Options">
+                 <div class="mobile-progress-bar none">
+                    <div class="progress"></div>
+                 </div>
             </footer>
+            <!--Mobile Navigation-->
+            <nav class="mobile-nav none">
+                <div class="nav-item">
+                    <img src="images/home-inactive-icon.svg" alt="Home">
+                    <a href="">Home</a>
+                </div>
+                <div class="nav-item">
+                    <img src="images/discover-icon.svg" alt="Discover">
+                    <a href="">Discover</a>
+                </div>
+                <div class="nav-item">
+                    <img src="images/search-icon.svg" alt="Search">
+                    <a href="">Search</a>
+                </div>
+                <div class="nav-item">
+                    <img src="images/library-icon.svg" alt="Library">
+                    <a href="">Library</a>
+                </div>
+                <div class="nav-item">
+                    <img src="images/user-icon.svg" alt="Profile">
+                    <a href="">Me</a>
+                </div>
+            </nav>
             
         </div>
     </div>
