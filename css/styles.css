@@ -419,6 +419,30 @@
   background-color: #777777;
 }
 
+.green {
+  background-color: #148A08;
+}
+
+.blood-orange {
+  background-color: #D84000;
+}
+
+.plum {
+  background-color: #503750;
+}
+
+.teal {
+  background-color: #006450;
+}
+
+.pink {
+  background-color: #E91429;
+}
+
+.blue {
+  background-color: #537AA1;
+}
+
 .home-page {
   flex: 1;
   overflow-y: auto;
