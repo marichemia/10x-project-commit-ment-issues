@@ -97,7 +97,37 @@
     gap: 10px;
     overflow-x: auto;
     padding-bottom: 10px;
+
+    .box {
+        border-radius: 8px;
+        position: relative;
+        overflow: hidden;
+        height: $card-size-desktop;
+
+        .album-cover-text {
+            position: absolute;
+            font-size: 20px;
+            font-weight: 800;
+
+            left: 20px;
+            top: 20px;
+
+            color: #FFFFFF;
+        }
+
+        img {
+            position: absolute;
+            width: 104px;
+            height: 104px;
+            bottom: -10px;
+            right: -20px;
+            border-radius: 5px;
+
+            transform: rotate(25deg);
+        }
+    }
 }
+
 
 .boxes img {
     height: auto;
@@ -111,12 +141,28 @@
 }
 
 @media (max-width: 1280px) {
-    .card1, .card2, .card3, .boxes img{
+    .card1, .card2, .card3{
         width: 150px;
         height: 150px;
     }
+}
 
-    .boxes {
-        gap: 0;
-    }
+.navy {
+    background-color: #1E3264;
+}
+
+.orange {
+    background-color: #BA5D07;
+}
+
+.lilac {
+    background-color: #8D67AB;
+}
+
+.purple {
+    background-color: #B02897;
+}
+
+.grey {
+    background-color: #777777;
 }
