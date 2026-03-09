@@ -532,6 +532,7 @@ form.library-icon-btn:hover input, form.library-icon-btn input:focus {
 body {
   margin: 0;
   font-family: "Satoshi", sans-serif;
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=styles.css.map */
