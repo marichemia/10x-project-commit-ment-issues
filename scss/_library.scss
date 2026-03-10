@@ -5,16 +5,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 8px 16px;
   color: #898989;
   background-color: transparent;
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .left-group, .right-group {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 36px;
 }
 
 .library-icon-btn {
@@ -25,7 +25,6 @@
   color: #b3b3b3; 
   cursor: pointer;
   white-space: nowrap;
-  padding: 4px 8px;
   transition: all 0.2s ease;
 
   img {
@@ -40,7 +39,7 @@
   }
 
   &:hover {
-    color: white;
+    color: #FFFFFF;
     transform: scale(1.05);
     
     img {
@@ -72,7 +71,7 @@ form.library-icon-btn {
 .library-main-content {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-  gap:8px;
+  gap:12px;
   width: 100%;
 }
 
@@ -113,13 +112,21 @@ form.library-icon-btn {
 
 .pin-image-wrapper {
   position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $black-bg;
   top: 0px;
   right: 0px;
 }
 
 .pin-image-wrapper img {
-  width: 40px;
-  height: 40px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  top: 25%;
+  left: 25%;
 }
 
 .song-title-wrapper {
