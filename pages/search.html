@@ -140,70 +140,162 @@
                     </button>
                 </div>
             </header>
-           <main class="main-content">
-                
-                <!-- Search Page Content would go here  -->
+            <!--Search Page Content-->
+           <main class="main-content home-page">
+                <!--Search Bar (only visible in mobile view)-->
+                <div class="none search-container">
+                    <div class="search-bar">
+                        <input type="text" placeholder="What do you want to play?" />
+                        <span class="search-icon">
+                            <img src="../images/search-field-icon-mobile.svg" alt="search">
+                        </span>
+                    </div>
+                    <img src="../images/camera-icon.svg" alt="image search">
+                </div>
+                <!--Recent Searches Section-->
                 <div class="search-wrapper">
                   <h3>Recent searches</h3>
                   <img src="/images/more.png" alt="see-more">
                 </div>
-                <section class="recent-searches">
-                    
+                <section class="recent-searches cards-container">
                     <div class="image-wrapper">
-                        <div class="card1">
-                            <img src="/images/X.png" alt="exit">
+                        <div class="card1 card">
+                            <img src="/images/X.png" alt="remove" id="card-x-button">
                         </div>
                         <h4>Daft Punk</h4>
                     </div>
                     <div class="image-wrapper">
-                        <div class="card2">
-                            <img src="/images/X.png" alt="exit">
+                        <div class="card2 card">
+                            <img src="/images/X.png" alt="remove" id="card-x-button">
                         </div>
                         <h4>David Bowie</h4>
                     </div>
                     <div class="image-wrapper">
-                        <div class="card3">
-                            <img src="/images/X.png" alt="exit">
+                        <div class="card3 card">
+                            <img src="/images/X.png" alt="remove" id="card-x-button">
                         </div>
-                        <h4>Black Holes...</h4>
-                        <p>Muse</p>
+                        <h4 class="align-self-start">Black Holes...</h4>
+                        <p class="align-self-start">Muse</p>
                     </div>
                 </section>
-                <!-- there is discover section -->
-
-                <h3>Browse all</h3>
+                
+                <!--Discover and Genres Sections-->
+                <h3 class="browse-all-header">Browse all</h3>
                 <section class="discover">
                      <div class="discover-wrapper">
                         <p>Discover</p>
-                         <img src="/images/arrows.png" alt="arrows">
+                        <img src="/images/arrows.png" alt="arrows">
                     </div>
-                    <div class="boxes">
-                        <img src="/images/made-for-you.png" alt="made-for-you">
-                        <img src="/images/new-releases.png" alt="new-releases">
-                        <img src="/images/spotify-classics.png" alt="spotify-classics">
-                        <img src="/images/charts.png" alt="charts">
-                        <img src="/images/trending.png" alt="trending">
-                        <img src="/images/discover.png" alt="discover">
-                        <img src="/images/spotify-singles.png" alt="spotify-singles">
-                        <img src="/images/decades.png" alt="decades">
+                    <div class="boxes cards-container">
+                        <div class="box navy">
+                            <div class="album-cover-text">
+                                <p>Made For</p>
+                                <P>You</P>
+                            </div>
+                            <img src="/images/rock-mix.png" alt="made for you">
+                        </div>
+                        <div class="box orange">
+                            <div class="album-cover-text">
+                                <p>New</p>
+                                <p>Releases</p>
+                            </div>
+                            <img src="/images/new-releases.png" alt="new releases">
+                        </div>
+                        <div class="box navy">
+                            <div class="album-cover-text">
+                                <p>Spotify</p>
+                                <p>Classics</p>
+                            </div>
+                            <img src="/images/spotify-classics.jpg" alt="spotify classics">
+                        </div>
+                        <div class="box lilac">
+                            <div class="album-cover-text">
+                                <p>Charts</p>
+                            </div>
+                            <img src="/images/charts.jpg" alt="charts">
+                        </div>
+                        <div class="box purple">
+                            <div class="album-cover-text">
+                                <p>Trending</p>
+                            </div>
+                            <img src="/images/trending.jpg" alt="trending">
+                        </div>
+                        <div class="box lilac">
+                            <div class="album-cover-text">
+                                <p>Discover</p>
+                            </div>
+                            <img src="/images/discover.jpg" alt="Discover">
+                        </div>
+                        <div class="box grey">
+                            <div class="album-cover-text">
+                                <p>Spotify</p>
+                                <p>Singles</p>
+                            </div>
+                            <img src="/images/hits.jpg" alt="spotify singles">
+                        </div>
+                        <div class="box orange">
+                            <div class="album-cover-text">
+                                <p>Decades</p>
+                            </div>
+                            <img src="/images/decades.jpg" alt="decades">
+                        </div>
                     </div>
                 </section>
-               <!-- there is section for Gerns -->
 
-                <div class="genrs-wrapper">
-                    <p>Genrs</p>
+                <div class="genres-wrapper">
+                    <p>Genres</p>
                     <img src="/images/arrows.png" alt="arrows">
                 </div>
-                <section class="genrs">
-                    <div class="boxes">
-                        <img src="/images/pop.png" alt="pop">
-                        <img src="/images/country.png" alt="country">
-                        <img src="/images/hip-hop.png" alt="hip-hop">
-                        <img src="/images/rock.png" alt="rock">
-                        <img src="/images/indie.png" alt="indie">
-                        <img src="/images/punk.png" alt="punk">
-                        <img src="/images/metal.png" alt="metal">
-                        <img src="/images/instrumental.png" alt="instrumental">
+                <section class="genres">
+                    <div class="boxes cards-container">
+                        <div class="box green">
+                            <div class="album-cover-text">
+                                <p>Pop</p>
+                            </div>
+                            <img src="/images/pop.jpg" alt="pop">
+                        </div>
+                        <div class="box blood-orange">
+                            <div class="album-cover-text">
+                                <p>Country</p>
+                            </div>
+                            <img src="/images/country.jpg" alt="country">
+                        </div>
+                        <div class="box plum">
+                            <div class="album-cover-text">
+                                <p>Hip-Hop</p>
+                            </div>
+                            <img src="/images/hip-hop.jpg" alt="hip-hop">
+                        </div>
+                        <div class="box teal">
+                            <div class="album-cover-text">
+                                <p>Rock</p>
+                            </div>
+                            <img src="/images/rock.jpg" alt="rock">
+                        </div>
+                        <div class="box pink">
+                            <div class="album-cover-text">
+                                <p>Indie</p>
+                            </div>
+                            <img src="/images/indie.jpg" alt="indie">
+                        </div>
+                        <div class="box navy">
+                            <div class="album-cover-text">
+                                <p>Punk</p>
+                            </div>
+                            <img src="/images/punk.jpg" alt="punk">
+                        </div>
+                        <div class="box pink">
+                            <div class="album-cover-text">
+                                <p>Metal</p>
+                            </div>
+                            <img src="/images/metal.jpg" alt="metal">
+                        </div>
+                        <div class="box blue">
+                            <div class="album-cover-text">
+                                <p>Instrumental</p>
+                            </div>
+                            <img src="/images/instrumental.jpg" alt="instrumental">
+                        </div>
                     </div>
                 </section>
             </main> 
@@ -227,10 +319,14 @@
                     <div class="song-playing">
                         <img src="../images/song-image-icon.png" alt="cover">
                         <div class="song-info">
-                            <div class="song-title">Get Lucky</div>
+                            <div class="song-title">Get Lucky<span class="none feat">(Feat. Pharrell Williams)</span></div>
                             <div class="artist">Daft Punk</div>
                             <div class="album">Random Access Memories</div>
                         </div>
+                    </div>
+                    <div class="mobile-footer-icons none">
+                        <img src="../images/add-song.svg" alt="Add Song">
+                        <img src="../images/play-mobile-icon.svg" alt="Play/Pause">
                     </div>
                 </div>
                 <div class="other-controls">
@@ -244,7 +340,34 @@
                     <img src="../images/queue-icon.svg" alt="Queue">
                 </div>
                  <img src="../images/more-icon.svg" class="none more-menu" alt="More Options">
+                 <!--player progress bar for mobile view-->
+                 <div class="mobile-progress-bar none">
+                    <div class="progress"></div>
+                 </div>
             </footer>
+            <!--Mobile Navigation-->
+            <nav class="mobile-nav none">
+                <div class="nav-item">
+                    <img src="../images/home-inactive-icon.svg" alt="Home">
+                    <a href="">Home</a>
+                </div>
+                <div class="nav-item">
+                    <img src="../images/discover-icon.svg" alt="Discover">
+                    <a href="">Discover</a>
+                </div>
+                <div class="nav-item">
+                    <img src="../images/search-icon.svg" alt="Search">
+                    <a href="">Search</a>
+                </div>
+                <div class="nav-item">
+                    <img src="../images/library-icon.svg" alt="Library">
+                    <a href="">Library</a>
+                </div>
+                <div class="nav-item">
+                    <img src="../images/user-icon.svg" alt="Profile">
+                    <a href="">Me</a>
+                </div>
+            </nav>
         </div>
     </div> 
 </body>
