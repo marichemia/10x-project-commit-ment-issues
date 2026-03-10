@@ -75,6 +75,60 @@ form.library-icon-btn {
   width: 100%;
 }
 
+#list:target {
+  grid-template-columns: 1fr;
+  gap: 16px;
+  color: $light-font-color;
+
+  .date {
+    display: block;
+  }
+
+  .song-wrapper {
+    flex-direction: row;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    min-width: 700px;
+  }
+
+  .song-image-wrapper img, .song-image-wrapper1 img {
+    width: $list-view-cover-size;
+    height: $list-view-cover-size;
+  }
+
+  .pin-image-wrapper {
+    top: 10%;
+    left: 10%;
+    background-color: transparent;
+  }
+
+  .playlist-icon {
+    display: flex;
+    align-items: center;
+  }
+
+  .list-icon {
+    display: block;
+  }
+
+  .box-description {
+    display: none;
+  }
+
+  .song-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    color: $primary-font-color;
+  }
+
+  .count {
+    color: $light-font-color;
+  }
+}
 .song-wrapper {
   position: relative; 
   border-radius: 8px;
@@ -84,16 +138,12 @@ form.library-icon-btn {
   cursor: pointer;
   gap: 8px;
   min-width: 0;
-  width: 170px;
+  width: 100%;
 }
 
 .song-wrapper:hover {
-  background-color: #282828;
-}
-
-.song-image-wrapper {
-  width: 170px;
-  height: 170px;
+  transform: translateY(-4px);
+  transition: transform 0.2s ease;
 }
 
 .song-image-wrapper img {
@@ -127,6 +177,10 @@ form.library-icon-btn {
   display: flex;
   top: 25%;
   left: 25%;
+}
+
+.song-info {
+  padding: 0 3px;
 }
 
 .song-title-wrapper {
