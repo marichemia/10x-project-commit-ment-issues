@@ -142,11 +142,21 @@
             </header>
             <!--Search Page Content-->
            <main class="main-content home-page">
+                <!--Search Bar (only visible in mobile view)-->
+                <div class="none search-container">
+                    <div class="search-bar">
+                        <input type="text" placeholder="What do you want to play?" />
+                        <span class="search-icon">
+                            <img src="../images/search-field-icon-mobile.svg" alt="search">
+                        </span>
+                    </div>
+                    <img src="../images/camera-icon.svg" alt="image search">
+                </div>
+                <!--Recent Searches Section-->
                 <div class="search-wrapper">
                   <h3>Recent searches</h3>
                   <img src="/images/more.png" alt="see-more">
                 </div>
-                <!--Recent Searches Section-->
                 <section class="recent-searches cards-container">
                     <div class="image-wrapper">
                         <div class="card1 card">
@@ -174,7 +184,7 @@
                 <section class="discover">
                      <div class="discover-wrapper">
                         <p>Discover</p>
-                         <img src="/images/arrows.png" alt="arrows">
+                        <img src="/images/arrows.png" alt="arrows">
                     </div>
                     <div class="boxes cards-container">
                         <div class="box navy">
@@ -309,10 +319,14 @@
                     <div class="song-playing">
                         <img src="../images/song-image-icon.png" alt="cover">
                         <div class="song-info">
-                            <div class="song-title">Get Lucky</div>
+                            <div class="song-title">Get Lucky<span class="none feat">(Feat. Pharrell Williams)</span></div>
                             <div class="artist">Daft Punk</div>
                             <div class="album">Random Access Memories</div>
                         </div>
+                    </div>
+                    <div class="mobile-footer-icons none">
+                        <img src="../images/add-song.svg" alt="Add Song">
+                        <img src="../images/play-mobile-icon.svg" alt="Play/Pause">
                     </div>
                 </div>
                 <div class="other-controls">
@@ -326,7 +340,34 @@
                     <img src="../images/queue-icon.svg" alt="Queue">
                 </div>
                  <img src="../images/more-icon.svg" class="none more-menu" alt="More Options">
+                 <!--player progress bar for mobile view-->
+                 <div class="mobile-progress-bar none">
+                    <div class="progress"></div>
+                 </div>
             </footer>
+            <!--Mobile Navigation-->
+            <nav class="mobile-nav none">
+                <div class="nav-item">
+                    <img src="../images/home-inactive-icon.svg" alt="Home">
+                    <a href="">Home</a>
+                </div>
+                <div class="nav-item">
+                    <img src="../images/discover-icon.svg" alt="Discover">
+                    <a href="">Discover</a>
+                </div>
+                <div class="nav-item">
+                    <img src="../images/search-icon.svg" alt="Search">
+                    <a href="">Search</a>
+                </div>
+                <div class="nav-item">
+                    <img src="../images/library-icon.svg" alt="Library">
+                    <a href="">Library</a>
+                </div>
+                <div class="nav-item">
+                    <img src="../images/user-icon.svg" alt="Profile">
+                    <a href="">Me</a>
+                </div>
+            </nav>
         </div>
     </div> 
 </body>
