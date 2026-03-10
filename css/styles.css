@@ -447,13 +447,6 @@
   background-color: #537AA1;
 }
 
-.main-page {
-  color: #E0E0E0;
-  background-color: #060606;
-  overflow: auto;
-  padding: 20px;
-}
-
 .library-button-wrapper {
   display: flex;
   align-items: center;
