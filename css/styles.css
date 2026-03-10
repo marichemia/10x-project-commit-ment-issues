@@ -516,49 +516,10 @@ form.library-icon-btn:hover input, form.library-icon-btn input:focus {
 }
 
 #list:target {
-  grid-template-columns: 1fr;
-  gap: 16px;
-  color: #898989;
-}
-#list:target .date {
-  display: block;
-}
-#list:target .song-wrapper {
-  flex-direction: row;
-  height: 60px;
-  justify-content: space-between;
-  align-items: center;
-  width: 60%;
-  min-width: 700px;
-}
-#list:target .song-image-wrapper img, #list:target .song-image-wrapper1 img {
-  width: 60px;
-  height: 60px;
-}
-#list:target .pin-image-wrapper {
-  top: 10%;
-  left: 10%;
-  background-color: transparent;
-}
-#list:target .playlist-icon {
-  display: flex;
-  align-items: center;
-}
-#list:target .list-icon {
-  display: block;
-}
-#list:target .box-description {
   display: none;
 }
-#list:target .song-info {
+#list:target .list-view {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 50%;
-  color: #E0E0E0;
-}
-#list:target .count {
-  color: #898989;
 }
 
 .song-wrapper {
@@ -660,6 +621,31 @@ form.library-icon-btn:hover input, form.library-icon-btn input:focus {
   font-size: 14px;
   color: #989797;
   margin-top: 4px;
+}
+
+.list-view {
+  color: #898989;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.list-view summary {
+  list-style: none;
+  font-family: "Satoshi", sans-serif;
+  font-size: 20px;
+  color: #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.list-view summary::-webkit-details-marker {
+  display: none;
+}
+.list-view .dropdown-arrow {
+  transition: transform 0.2s ease;
+}
+.list-view details[open] .dropdown-arrow {
+  transform: rotate(90deg);
 }
 
 .home-page {
