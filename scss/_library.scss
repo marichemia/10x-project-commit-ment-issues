@@ -196,6 +196,9 @@ form.library-icon-btn {
   display: flex;
   flex-direction: column;
 
+  color: $light-font-color;
+  font-size: 16px;
+
   summary {
     list-style: none;
     font-family: 'Satoshi', sans-serif;
@@ -205,6 +208,9 @@ form.library-icon-btn {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    margin-bottom: 20px;
+    padding-top: 12px;
 
   }
 
@@ -217,7 +223,59 @@ form.library-icon-btn {
   }
 
   details[open] .dropdown-arrow {
-  transform: rotate(90deg);
-}
+    transform: rotate(90deg);
+  }
+
+  .list-item {
+    width: 100%;
+    height: $list-item-height;
+
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 8px;
+    border-radius: 8px;
+
+    &:hover {
+      color: $primary-font-color;
+      transform: translateY(-1px);
+      transition: transform 0.2s ease;
+    }
+  }
+
+  .item {
+    width: 22%;
+    min-width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .white-space {
+    width: 16%;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 33%;
+    min-width: 275px;
+  }
+
+  .list-img {
+    width: $list-item-height;
+    height: $list-item-height;
+  }
+
+  .artist-img {
+    border-radius: 50%;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    width: 190px;
+  }
 
 }
