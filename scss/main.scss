@@ -5,10 +5,13 @@
 @use 'header';
 @use 'player';
 @use 'search';
+@use 'library';
 @use 'home';
 @use 'home-mobile';
 @use 'friends';
 @use 'liked-songs';
+@use 'search-mobile';
+@use 'library-mobile';
 
 @font-face {
   font-family: 'Satoshi';
