@@ -1,6 +1,8 @@
+@use 'variables' as *;
+
 .main-page {
-  color: #E0E0E0;
-  background-color: #060606;
+  color: $primary-font-color;
+  background-color: $primary-background;
   overflow: auto;
   padding: 20px;
 }
@@ -8,12 +10,19 @@
 .liked-songs-content {
     display: flex;
     align-items: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-between;
     padding: 8px 16px;
     color: #898989;
     background-color: transparent;
     width: 100%;
+}
+
+.liked-songs-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .left-side, .right-side {
@@ -59,12 +68,14 @@ table {
 }
 
 #liked-songs-table {
+  width: 100%;
   padding: 16px;
   overflow: hidden;
 }
 
 .songs-table {
-  width: 100%;
+  width: 50%;
+  max-width: 780px;
   border-collapse: collapse;
 }
 
@@ -154,11 +165,22 @@ table {
 }
 
 .songs-description td:last-child img {
-  width: 18px;
-  height: 18px;
+  width: 40px;
+  height: 40px;
   opacity: 0.7;
   transition: transform 0.2s ease;
 }
 
+.liked-songs-info {
+  display: flex;
+  flex-direction: column;
+}
 
+@media screen and (max-width: 1630px) {
+  .songs-table {
+    width: 100%;
+    max-width: none;
+  }
+}
+  
 
