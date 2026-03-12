@@ -518,9 +518,6 @@ form.library-icon-btn:hover input, form.library-icon-btn input:focus {
 #list:target {
   display: none;
 }
-#list:target .list-view {
-  display: flex;
-}
 
 .song-wrapper {
   position: relative;
@@ -623,12 +620,86 @@ form.library-icon-btn:hover input, form.library-icon-btn input:focus {
   margin-top: 4px;
 }
 
-.list-view {
+#list:target ~ .list-view {
+  display: flex;
   color: #898989;
   width: 100%;
   display: flex;
   flex-direction: column;
+  font-size: 16px;
+}
+#list:target ~ .list-view summary {
+  list-style: none;
+  font-family: "Satoshi", sans-serif;
+  font-size: 20px;
+  color: #E0E0E0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-top: 12px;
+}
+#list:target ~ .list-view summary::-webkit-details-marker {
+  display: none;
+}
+#list:target ~ .list-view .dropdown-arrow {
+  transition: transform 0.2s ease;
+}
+#list:target ~ .list-view details[open] .dropdown-arrow {
+  transform: rotate(90deg);
+}
+#list:target ~ .list-view .list-item-container {
+  display: flex;
+  flex-direction: column;
+}
+#list:target ~ .list-view .list-item {
+  width: 100%;
+  height: 61px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+#list:target ~ .list-view .list-item:hover {
+  color: #E0E0E0;
+  transform: translateY(-1px);
+  transition: transform 0.2s ease;
+}
+#list:target ~ .list-view .item {
+  width: 22%;
+  min-width: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#list:target ~ .list-view .white-space {
+  width: 16%;
+}
+#list:target ~ .list-view .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 33%;
+  min-width: 275px;
+}
+#list:target ~ .list-view .list-img {
+  width: 61px;
+  height: 61px;
+}
+#list:target ~ .list-view .artist-img {
+  border-radius: 50%;
+}
+#list:target ~ .list-view .title {
+  display: flex;
+  align-items: center;
+  width: 190px;
+}
+
+.list-view {
+  display: flex;
   color: #898989;
+  width: 100%;
+  flex-direction: column;
   font-size: 16px;
 }
 .list-view summary {
@@ -651,47 +722,9 @@ form.library-icon-btn:hover input, form.library-icon-btn input:focus {
 .list-view details[open] .dropdown-arrow {
   transform: rotate(90deg);
 }
-.list-view .list-item {
-  width: 100%;
-  height: 61px;
+.list-view .list-item-container {
   display: flex;
-  align-items: center;
-  margin-bottom: 8px;
-  border-radius: 8px;
-}
-.list-view .list-item:hover {
-  color: #E0E0E0;
-  transform: translateY(-1px);
-  transition: transform 0.2s ease;
-}
-.list-view .item {
-  width: 22%;
-  min-width: 310px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.list-view .white-space {
-  width: 16%;
-}
-.list-view .info {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 33%;
-  min-width: 275px;
-}
-.list-view .list-img {
-  width: 61px;
-  height: 61px;
-}
-.list-view .artist-img {
-  border-radius: 50%;
-}
-.list-view .title {
-  display: flex;
-  align-items: center;
-  width: 190px;
+  flex-direction: row;
 }
 
 .home-page {
