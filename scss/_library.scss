@@ -199,6 +199,14 @@ form.library-icon-btn {
 
   font-size: 16px;
 
+  .grid-img, .item .description-box {
+    display: none;
+  }
+
+  .list-img, .white-space, .info, .pin-gray, .title img{
+    display: block;
+  }
+
   summary {
     list-style: none;
     font-family: 'Satoshi', sans-serif;
@@ -252,8 +260,14 @@ form.library-icon-btn {
     width: 22%;
     min-width: 310px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+
+  .pin-icon {
+    position: relative;
+    background: none;
   }
 
   .white-space {
@@ -293,7 +307,17 @@ form.library-icon-btn {
   width: 100%;
   flex-direction: column;
 
-  font-size: 16px;
+  font-size: 14px;
+  color: $primary-font-color;
+
+  
+  .grid-img, .item .description-box {
+    display: block;
+  }
+
+  .list-img, .white-space, .info, .pin-gray, .title img {
+    display: none;
+  }
 
   summary {
     list-style: none;
@@ -325,6 +349,59 @@ form.library-icon-btn {
   .list-item-container {
     display: flex;
     flex-direction: row;
+    gap: 12px;
+    overflow-x: auto;
+    margin-bottom: 10px;
+  }
+
+  .list-item-container::-webkit-scrollbar {
+    height: 6px;
+  }
+
+  .list-item-container::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .list-item-container::-webkit-scrollbar-thumb{
+    background: $secondary-background;
+    border-radius: 999px;
+  }
+
+  .list-item-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  .grid-img {
+    width: $card-size-desktop;
+    height: $card-size-desktop + 8px;
+  }
+
+  .item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .pin-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $black-bg;
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  .description-box {
+    font-size: 12px;
+    color: $light-font-color;
+    max-width: 170px;
+    max-height: 32px;
+
+    line-height: 16px;
+    overflow: hidden;
+
+    padding-right: 4px;
   }
   
 }

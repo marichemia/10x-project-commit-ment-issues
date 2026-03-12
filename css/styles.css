@@ -628,6 +628,12 @@ form.library-icon-btn:hover input, form.library-icon-btn input:focus {
   flex-direction: column;
   font-size: 16px;
 }
+#list:target ~ .list-view .grid-img, #list:target ~ .list-view .item .description-box {
+  display: none;
+}
+#list:target ~ .list-view .list-img, #list:target ~ .list-view .white-space, #list:target ~ .list-view .info, #list:target ~ .list-view .pin-gray, #list:target ~ .list-view .title img {
+  display: block;
+}
 #list:target ~ .list-view summary {
   list-style: none;
   font-family: "Satoshi", sans-serif;
@@ -669,8 +675,13 @@ form.library-icon-btn:hover input, form.library-icon-btn input:focus {
   width: 22%;
   min-width: 310px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+#list:target ~ .list-view .pin-icon {
+  position: relative;
+  background: none;
 }
 #list:target ~ .list-view .white-space {
   width: 16%;
@@ -700,7 +711,14 @@ form.library-icon-btn:hover input, form.library-icon-btn input:focus {
   color: #898989;
   width: 100%;
   flex-direction: column;
-  font-size: 16px;
+  font-size: 14px;
+  color: #E0E0E0;
+}
+.list-view .grid-img, .list-view .item .description-box {
+  display: block;
+}
+.list-view .list-img, .list-view .white-space, .list-view .info, .list-view .pin-gray, .list-view .title img {
+  display: none;
 }
 .list-view summary {
   list-style: none;
@@ -725,6 +743,49 @@ form.library-icon-btn:hover input, form.library-icon-btn input:focus {
 .list-view .list-item-container {
   display: flex;
   flex-direction: row;
+  gap: 12px;
+  overflow-x: auto;
+  margin-bottom: 10px;
+}
+.list-view .list-item-container::-webkit-scrollbar {
+  height: 6px;
+}
+.list-view .list-item-container::-webkit-scrollbar-track {
+  background: transparent;
+}
+.list-view .list-item-container::-webkit-scrollbar-thumb {
+  background: #202020;
+  border-radius: 999px;
+}
+.list-view .list-item-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.list-view .grid-img {
+  width: 170px;
+  height: 178px;
+}
+.list-view .item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.list-view .pin-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #111111;
+  border-radius: 50%;
+  padding: 10px;
+}
+.list-view .description-box {
+  font-size: 12px;
+  color: #898989;
+  max-width: 170px;
+  max-height: 32px;
+  line-height: 16px;
+  overflow: hidden;
+  padding-right: 4px;
 }
 
 .home-page {
