@@ -1097,6 +1097,7 @@ form.library-icon-btn:hover input, form.library-icon-btn input:focus {
     justify-content: space-between;
     align-items: center;
     background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
   }
   .mobile-nav .nav-item {
     display: flex;
@@ -1464,6 +1465,291 @@ table {
     height: 149px;
   }
 }
+.song-main-content {
+  padding: 0;
+}
+
+.song-content {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  width: 100%;
+  min-height: 1500px;
+  padding: 36px 0 0 44px;
+}
+.song-content .bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("../images/ram-cover.png");
+  background-size: cover;
+  background-position: center;
+  filter: blur(100px);
+  transform: scale(1.3);
+}
+.song-content .overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(138, 157, 187, 0.18), #060606);
+}
+.song-content .content {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 81px;
+}
+.song-content .song-info-container {
+  display: flex;
+  gap: 62px;
+  margin-bottom: 54px;
+}
+.song-content .song-info {
+  display: flex;
+  flex-direction: column;
+  color: #898989;
+  gap: 20px;
+}
+.song-content .song-title {
+  font-size: 36px;
+  max-width: 721px;
+  color: #E0E0E0;
+  font-weight: bold;
+}
+
+.track-info {
+  display: flex;
+  justify-content: space-between;
+  color: #898989;
+  font-size: 14px;
+  width: 529px;
+}
+
+.artist-group, .album-group {
+  display: flex;
+  align-items: center;
+  color: #E0E0E0;
+}
+
+.artist-icon, .album-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.song-action-icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.song-info .genres {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.song-info .genres .genre {
+  padding: 5px 20px;
+  font-size: 14px;
+  border-radius: 44px;
+  border: 2px solid #898989;
+  color: #898989;
+}
+.song-info .genres .genre:hover {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.song-info .artists {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 312px;
+}
+.song-info .artists .artist {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.song-info .artists .artist-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.song-info .artists .artist-info .artist-name {
+  color: #E0E0E0;
+}
+
+.tabs-bar {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  border-bottom: 1px solid #898989;
+  margin-bottom: 40px;
+}
+
+.tab {
+  position: relative;
+  color: #898989;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.tab.active {
+  color: #E0E0E0;
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 3px;
+  background: #1ED760;
+  border-radius: 2px;
+}
+
+.lyrics-container {
+  display: grid;
+  grid-template-columns: 41px 1fr;
+  height: auto;
+}
+.lyrics-container .lyrics-toolbar {
+  display: flex;
+  flex-direction: column;
+}
+.lyrics-container .lyrics-toolbar img {
+  width: 41px;
+  height: 41px;
+}
+.lyrics-container .lyrics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 28px;
+  color: #898989;
+  font-weight: bold;
+  line-height: 50px;
+  margin-bottom: 100px;
+}
+.lyrics-container .lyrics-bold {
+  color: #E0E0E0;
+}
+
+@media screen and (max-width: 1480px) {
+  .song-info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .song-cover {
+    width: 50%;
+    height: 50%;
+  }
+  .song-content .song-title {
+    max-width: 805px;
+  }
+}
+@media (max-width: 1200px) {
+  .song-content .song-title {
+    max-width: 721px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 800px) {
+  .footer, .mobile-nav, .bg, .overlay, .song-content .song-info, .tabs-bar, .lyrics-container .lyrics-toolbar {
+    display: none;
+  }
+  .song-main-content {
+    background: linear-gradient(180deg, #3B414D 0%, #272B33 100%);
+    padding: 64px 24px;
+  }
+  .song-content {
+    padding: 0;
+  }
+  .song-content .song-info-container {
+    gap: 0;
+  }
+  .song-mobile-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 12px;
+    color: #898989;
+    margin-bottom: 28px;
+  }
+  .song-mobile-header div {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .song-cover {
+    width: 354px;
+    height: 354px;
+    margin-bottom: 32px;
+  }
+  .lyrics-container {
+    display: flex;
+    height: auto;
+  }
+  .lyrics-container .lyrics {
+    font-size: 20px;
+  }
+  .mobile-song-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .mobile-song-info h3 {
+    font-size: 20px;
+    color: #E0E0E0;
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 8px;
+    mask-image: linear-gradient(to right, black 65%, rgba(0, 0, 0, 0.6) 80%, transparent 100%);
+  }
+  .mobile-song-info h4 {
+    font-size: 18px;
+    color: #898989;
+  }
+  .title-artist-group, .song-icon-group {
+    margin-bottom: 40px;
+  }
+  .progress-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  .progress-wrapper .song-progress-bar {
+    width: 100%;
+    height: 4px;
+    background: #898989;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 12px;
+  }
+  .progress-wrapper .progress {
+    width: 40%;
+    height: 100%;
+    background: #E0E0E0;
+    border-radius: 4px;
+  }
+  .progress-wrapper .time {
+    font-size: 12px;
+    color: #898989;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mobile-song-controls, .song-mobile-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 36px;
+  }
+}
 @font-face {
   font-family: "Satoshi";
   src: url("../fonts/Satoshi-Regular.woff2") format("woff2");
@@ -1480,6 +1766,7 @@ body {
   margin: 0;
   font-family: "Satoshi", sans-serif;
   overflow-x: hidden;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
