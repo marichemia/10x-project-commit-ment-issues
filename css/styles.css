@@ -1097,6 +1097,7 @@ form.library-icon-btn:hover input, form.library-icon-btn input:focus {
     justify-content: space-between;
     align-items: center;
     background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
   }
   .mobile-nav .nav-item {
     display: flex;
@@ -1610,7 +1611,7 @@ table {
 .lyrics-container {
   display: grid;
   grid-template-columns: 41px 1fr;
-  height: 100%;
+  height: auto;
 }
 .lyrics-container .lyrics-toolbar {
   display: flex;
@@ -1628,6 +1629,7 @@ table {
   color: #898989;
   font-weight: bold;
   line-height: 50px;
+  margin-bottom: 100px;
 }
 .lyrics-container .lyrics-bold {
   color: #E0E0E0;
@@ -1764,6 +1766,7 @@ body {
   margin: 0;
   font-family: "Satoshi", sans-serif;
   overflow-x: hidden;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

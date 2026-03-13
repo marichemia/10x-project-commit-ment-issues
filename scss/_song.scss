@@ -168,9 +168,9 @@
 
 .lyrics-container {
 
-     display: grid;
+    display: grid;
     grid-template-columns: 41px 1fr;
-    height: 100%;
+    height: auto;
 
     .lyrics-toolbar {
         display: flex;
@@ -191,6 +191,8 @@
         color: $light-font-color;
         font-weight: bold;
         line-height: 50px;
+
+        margin-bottom: 100px;
     }
 
     .lyrics-bold {
