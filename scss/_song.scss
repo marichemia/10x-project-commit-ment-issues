@@ -198,3 +198,20 @@
     }
 
 }
+
+@media screen and (max-width:1480px) {
+
+    .song-info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .song-cover {
+        width: 50%;
+        height: 50%;
+    }
+
+    .song-content .song-title {
+        max-width: 805px;
+    }
+}
