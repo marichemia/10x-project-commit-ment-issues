@@ -215,3 +215,10 @@
         max-width: 805px;
     }
 }
+
+@media  (max-width:1200px) {
+    .song-content .song-title {
+        max-width: 721px;
+        text-align: center;
+    }
+}
