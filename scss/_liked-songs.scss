@@ -8,12 +8,8 @@
 }
 
 .liked-songs-content {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-between;
     padding: 8px 16px;
-    color: #898989;
+    color: $light-font-color;
     background-color: transparent;
     width: 100%;
 }
@@ -62,7 +58,7 @@
 
 table {
     width: 100%;
-    color: #898989;
+    color: $light-font-color;
     border-collapse: separate; 
     border-spacing: 0 10px;
 }
@@ -70,7 +66,6 @@ table {
 #liked-songs-table {
   width: 100%;
   padding: 16px;
-  overflow: hidden;
 }
 
 .songs-table {

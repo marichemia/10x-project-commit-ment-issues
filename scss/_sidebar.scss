@@ -1,9 +1,11 @@
+@use 'variables' as *;
+
 .sidebar {
-    background-color: #060606; //needs to be changed to a variable
+    background-color: $primary-background;
     padding: 8px 16px;
     display: flex;
     flex-direction: column;
-    color: #898989; //needs to be changed to a variable
+    color: $light-font-color;
     font-family: "Satoshi", sans-serif;
     font-size: 14px;
 }
@@ -40,7 +42,7 @@
 }
 
 .sidebar-item a:hover, .sidebar-top:hover{
-  background-color: rgba(255, 255, 255, 0.08); //needs to be changed to a variable
+  background-color: rgba(255, 255, 255, 0.08); 
 }
 
 .sidebar-item-icon-group {

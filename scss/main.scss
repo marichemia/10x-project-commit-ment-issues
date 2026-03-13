@@ -13,6 +13,8 @@
 @use 'search-mobile';
 @use 'library-mobile';
 @use 'album-page';
+@use 'song';
+@use 'song-mobile';
 
 @font-face {
   font-family: 'Satoshi';
@@ -33,4 +35,5 @@ body {
   margin: 0;
   font-family: 'Satoshi', sans-serif;
   overflow-x: hidden;
+  text-decoration: none;
 }
