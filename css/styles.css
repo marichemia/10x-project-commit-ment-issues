@@ -1508,7 +1508,7 @@ table {
 }
 
 .artist-table {
-  width: 50%;
+  width: 100%;
   max-width: 780px;
   border-collapse: collapse;
 }
@@ -1526,20 +1526,12 @@ table {
   letter-spacing: 0.08em;
 }
 
-.song-header th:first-child, .song-header th:last-child {
-  width: 40px;
-}
-.song-header th:first-child {
-  text-align: center;
-}
-
 .included-songs tr {
-  transition: background-color 0.2s ease;
   cursor: pointer;
 }
 
 .included-songs tr:hover {
-  background-color: rgba(255, 255, 255, 0.08);
+  transform: scale(1.01);
 }
 
 .included-songs td {
