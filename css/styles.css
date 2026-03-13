@@ -1659,7 +1659,7 @@ table {
   }
 }
 @media screen and (max-width: 800px) {
-  .footer, .mobile-nav, .bg, .overlay, .song-content .song-info, .tabs-bar, .lyrics-container .lyrics-toolbar {
+  .song-footer, .song-mob-nav, .bg, .overlay, .song-content .song-info, .tabs-bar, .lyrics-container .lyrics-toolbar {
     display: none;
   }
   .song-main-content {
