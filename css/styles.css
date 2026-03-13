@@ -1225,10 +1225,6 @@ form.library-icon-btn:hover input, form.library-icon-btn input:focus {
 }
 
 .liked-songs-content {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: space-between;
   padding: 8px 16px;
   color: #898989;
   background-color: transparent;
