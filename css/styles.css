@@ -189,6 +189,10 @@
     display: block;
   }
 }
+.footer .footer-overlay {
+  position: absolute;
+  inset: 0;
+}
 
 .footer-left-group {
   display: flex;
