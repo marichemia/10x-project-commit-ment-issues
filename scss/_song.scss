@@ -40,11 +40,13 @@
     .content {
         position: relative;
         z-index: 1;
+        padding-bottom: $footer-height;
     }
 
     .song-info-container {
         display: flex;
         gap: 62px;
+        margin-bottom: 54px;
     }
 
     .song-info {
@@ -128,4 +130,71 @@
             color: $primary-font-color;
         }
     }
+}
+
+.tabs-bar {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    border-bottom: 1px solid #898989;
+    margin-bottom: 40px;
+}
+
+.tab {
+    position: relative;
+    color: $light-font-color;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+}
+
+.tab.active {
+  color: $primary-font-color;
+}
+
+.tab.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  width: 100%;
+  height: 3px;
+
+  background: $spotify-green;
+  border-radius: 2px;
+}
+
+.lyrics-container {
+
+     display: grid;
+    grid-template-columns: 41px 1fr;
+    height: 100%;
+
+    .lyrics-toolbar {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 41px;
+            height: 41px;
+        }
+    }
+
+    .lyrics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        font-size: 28px;
+        color: $light-font-color;
+        font-weight: bold;
+        line-height: 50px;
+    }
+
+    .lyrics-bold {
+        color: $primary-font-color;
+    }
+
 }
