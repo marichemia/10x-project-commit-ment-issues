@@ -1,11 +1,13 @@
+@use 'variables' as *;
+
 .header {
-    background-color: #060606; //needs to be changed to a variable
+    background-color: $primary-background;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     font-family: 'Satoshi', sans-serif;
-    color: #898989; //needs to be changed to a variable
+    color: $light-font-color;
     padding: 0 12px;
 
     a {
@@ -42,7 +44,7 @@
     }
 
     #home-link-active, .header-nav-link:hover {
-        background-color: #111111; //needs to be changed to a variable
+        background-color: $black-bg;
         color: white; //temp color for testing
     }
 
@@ -88,7 +90,7 @@
 
 
     .header-icon-btn:hover {
-        background-color: #111111; //needs to be changed to a variable
+        background-color: $black-bg;
     }
 }
 

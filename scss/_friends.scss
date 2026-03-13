@@ -8,10 +8,10 @@
     bottom: $footer-height + 10px;
     width: clamp(270px, 21vw, 358px);
 
-    border: solid 1px #202020; // needs to be changed to a variable
+    border: solid 1px #202020; 
     border-radius: 10px;
 
-    color: #E0E0E0; // needs to be changed to a variable
+    color: $primary-font-color; 
     padding: 20px 12px;
 
     .friends-sidebar-header {
