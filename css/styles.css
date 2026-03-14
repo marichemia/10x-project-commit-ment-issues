@@ -1089,6 +1089,7 @@ form.library-icon-btn:hover input, form.library-icon-btn input:focus {
   .home-page {
     border: none;
     padding-right: 0;
+    padding-bottom: 160px;
   }
   .mobile-nav {
     position: fixed;
@@ -1776,7 +1777,7 @@ table {
   }
 }
 @media screen and (max-width: 800px) {
-  .song-footer, .song-mob-nav, .bg, .overlay, .song-content .song-info, .tabs-bar, .lyrics-container .lyrics-toolbar {
+  .song-footer, .song-mob-navigation, .bg, .overlay, .song-content .song-info, .tabs-bar, .lyrics-container .lyrics-toolbar {
     display: none;
   }
   .song-main-content {
